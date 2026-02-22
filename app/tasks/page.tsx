@@ -13,7 +13,7 @@ export default function Tasks() {
   ]
   return (
     <div className="space-y-6">
-      <h1 className="text-2xl font-bold text-brand-blue">Tasks</h1>
+      <h1 className="text-2xl font-bold text-blue-900">Tasks</h1>
       <div className="space-y-2">
         {tasks.map(t => (
           <div key={t.title} className="card flex items-center justify-between">

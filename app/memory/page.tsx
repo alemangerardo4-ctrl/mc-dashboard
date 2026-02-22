@@ -6,10 +6,10 @@ export default function Memory() {
   ]
   return (
     <div className="space-y-6">
-      <h1 className="text-2xl font-bold text-brand-blue">Memory</h1>
+      <h1 className="text-2xl font-bold text-blue-900">Memory</h1>
       <div className="space-y-4">
         {entries.map(e => (
-          <div key={e.title} className="card border-l-4 border-brand-blue-mid">
+          <div key={e.title} className="card border-l-4 border-blue-400">
             <div className="flex items-center gap-2 mb-2">
               <span className="badge-blue">{e.date}</span>
               <h3 className="font-semibold text-slate-800">{e.title}</h3>

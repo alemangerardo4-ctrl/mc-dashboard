@@ -5,12 +5,12 @@ export default function People() {
   ]
   return (
     <div className="space-y-6">
-      <h1 className="text-2xl font-bold text-brand-blue">People</h1>
+      <h1 className="text-2xl font-bold text-blue-900">People</h1>
       <div className="space-y-3">
         {people.map(p => (
           <div key={p.name} className="card flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-brand-blue to-forest-600 flex items-center justify-center text-white font-bold text-sm">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-900 to-green-600 flex items-center justify-center text-white font-bold text-sm">
                 {p.name.split(' ').map(n => n[0]).join('')}
               </div>
               <div>

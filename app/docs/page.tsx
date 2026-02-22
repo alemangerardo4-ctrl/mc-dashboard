@@ -9,7 +9,7 @@ export default function Docs() {
   ]
   return (
     <div className="space-y-6">
-      <h1 className="text-2xl font-bold text-brand-blue">Docs</h1>
+      <h1 className="text-2xl font-bold text-blue-900">Docs</h1>
       <div className="space-y-3">
         {docs.map(d => (
           <div key={d.title} className="card flex items-center justify-between">

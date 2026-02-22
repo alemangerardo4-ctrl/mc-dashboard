@@ -27,10 +27,10 @@ export default function Nav() {
         <div className="flex items-center h-16 gap-2">
           {/* Brand */}
           <Link href="/" className="flex items-center gap-2 mr-4">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-blue to-forest-600 flex items-center justify-center">
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-900 to-green-600 flex items-center justify-center">
               <span className="text-white font-bold text-sm">PW</span>
             </div>
-            <span className="font-bold text-brand-blue hidden sm:block">Public Works</span>
+            <span className="font-bold text-blue-900 hidden sm:block">Public Works</span>
           </Link>
 
           {/* Nav links */}
@@ -42,8 +42,8 @@ export default function Nav() {
                 className={clsx(
                   'flex items-center gap-1.5 text-sm whitespace-nowrap px-3 py-1.5 rounded-lg transition-colors',
                   path === href
-                    ? 'bg-sky-50 text-brand-blue font-semibold'
-                    : 'text-slate-500 hover:text-brand-blue hover:bg-sky-50'
+                    ? 'bg-sky-50 text-blue-900 font-semibold'
+                    : 'text-slate-500 hover:text-blue-900 hover:bg-sky-50'
                 )}
               >
                 <Icon size={15} />

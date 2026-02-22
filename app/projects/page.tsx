@@ -6,7 +6,7 @@ export default function Projects() {
   ]
   return (
     <div className="space-y-6">
-      <h1 className="text-2xl font-bold text-brand-blue">Projects</h1>
+      <h1 className="text-2xl font-bold text-blue-900">Projects</h1>
       <div className="space-y-3">
         {projects.map(p => (
           <div key={p.name} className="card flex items-center justify-between">
