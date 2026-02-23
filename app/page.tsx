@@ -2,10 +2,11 @@ import Card from '@/components/Card'
 import StatCard from '@/components/StatCard'
 import { 
   FolderKanban, Brain, FileText, Users, 
-  CheckSquare, Image, Calendar, Zap 
+  CheckSquare, Image, Calendar, Zap,
+  type LucideIcon
 } from 'lucide-react'
 
-const modules = [
+const modules: { title: string; href: string; icon: LucideIcon; color: 'blue' | 'green'; desc: string }[] = [
   { title: 'Projects',   href: '/projects',  icon: FolderKanban, color: 'blue',  desc: 'Track active brand + product builds'       },
   { title: 'Tasks',      href: '/tasks',     icon: CheckSquare,  color: 'green', desc: 'Daily to-dos and sprint backlog'             },
   { title: 'Content',    href: '/content',   icon: Image,        color: 'blue',  desc: 'Photo, video, copy pipeline'                 },
@@ -16,11 +17,11 @@ const modules = [
   { title: 'Workflows',  href: '/workflows', icon: Zap,          color: 'green', desc: 'Automation — Figma → code, order → ship'    },
 ]
 
-const stats = [
-  { label: 'Active Projects', value: '3',    color: 'blue'  },
-  { label: 'Open Tasks',      value: '12',   color: 'green' },
-  { label: 'Content Pieces',  value: '5',    color: 'blue'  },
-  { label: 'This Week',       value: 'Day 1',color: 'green' },
+const stats: { label: string; value: string; color: 'blue' | 'green' }[] = [
+  { label: 'Active Projects', value: '3',     color: 'blue'  },
+  { label: 'Open Tasks',      value: '12',    color: 'green' },
+  { label: 'Content Pieces',  value: '5',     color: 'blue'  },
+  { label: 'This Week',       value: 'Day 1', color: 'green' },
 ]
 
 export default function Home() {
