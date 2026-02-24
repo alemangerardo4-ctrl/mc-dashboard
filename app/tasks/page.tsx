@@ -28,8 +28,9 @@ const initialTasks: Task[] = [
   { id: '8',  title: 'Telegram dual-channel connected',   priority: 'High',   category: 'Ops',       est: '10 min',  status: 'Done',       notes: 'Day 2' },
 
   // In Progress
-  { id: '9',  title: 'Kanban board in Mission Control',   priority: 'High',   category: 'Dev',       est: '45 min',  status: 'In Progress' },
-  { id: '10', title: 'Figma MCP design token pipeline',  priority: 'High',   category: 'Design',    est: '30 min',  status: 'In Progress' },
+  { id: '9',  title: 'Kanban board in Mission Control',        priority: 'High',   category: 'Dev',     est: '45 min',  status: 'Done',        notes: 'Live with move/filter ✅ Day 3' },
+  { id: '10', title: 'Figma MCP pipeline — PAT + file wired', priority: 'High',   category: 'Design',  est: '30 min',  status: 'In Progress', notes: 'Token extraction pending rate limit' },
+  { id: '25', title: 'Shopify store setup + Storefront API',  priority: 'High',   category: 'Product', est: '2 hrs',   status: 'In Progress', notes: 'Playbook ready — starting now' },
 
   // Todo
   { id: '11', title: 'Shopify store setup',              priority: 'High',   category: 'Product',   est: '45 min',  status: 'Todo' },
@@ -116,19 +117,19 @@ export default function TasksPage() {
       {/* Day 2 scoreboard */}
       <div className="card bg-gradient-to-r from-sky-50 to-green-50 border-l-4 border-green-500">
         <div className="flex items-center justify-between mb-2">
-          <h2 className="font-semibold text-slate-700">Day 2 Scoreboard</h2>
-          <span className="badge-green">Feb 22</span>
+          <h2 className="font-semibold text-slate-700">Day 3 Scoreboard</h2>
+          <span className="badge-green">Feb 24</span>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {[
-            { label: 'Brave Search',     done: true,  est: '5 min'  },
-            { label: 'Vercel Deploy',    done: true,  est: '20 min' },
-            { label: 'Google (gog)',     done: true,  est: '20 min' },
-            { label: 'Kanban Board',     done: true,  est: '45 min' },
-            { label: 'Shopify Store',    done: false, est: '45 min' },
-            { label: 'Figma MCP',        done: false, est: '30 min' },
-            { label: 'Product Page',     done: false, est: '1 hr'   },
-            { label: 'Content Calendar', done: false, est: '45 min' },
+            { label: 'Google Calendar → MC', done: true,  est: '30 min' },
+            { label: 'Recurring 9am event',  done: true,  est: '5 min'  },
+            { label: 'Figma MCP wired',      done: true,  est: '45 min' },
+            { label: 'Workflows tracker',    done: true,  est: '20 min' },
+            { label: 'Shopify setup',        done: false, est: '2 hrs'  },
+            { label: 'Token extraction',     done: false, est: '30 min' },
+            { label: 'Product page (shelf)', done: false, est: '1 hr'   },
+            { label: 'Gmail widget',         done: false, est: '30 min' },
           ].map(w => (
             <div key={w.label} className={clsx(
               'flex items-center gap-2 px-3 py-2 rounded-xl text-sm',
