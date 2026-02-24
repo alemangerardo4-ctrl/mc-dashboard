@@ -35,7 +35,7 @@ const initialTasks: Task[] = [
   { id: '11', title: 'Shopify store setup',              priority: 'High',   category: 'Product',   est: '45 min',  status: 'Todo' },
   { id: '12', title: 'First product page — shelf',       priority: 'High',   category: 'Product',   est: '1 hr',    status: 'Todo' },
   { id: '13', title: 'Shopify Storefront API integration',priority: 'High',  category: 'Dev',       est: '2 hrs',   status: 'Todo' },
-  { id: '14', title: 'Google Calendar live in MC',       priority: 'Medium', category: 'Dev',       est: '30 min',  status: 'Todo' },
+  { id: '14', title: 'Google Calendar live in MC',       priority: 'Medium', category: 'Dev',       est: '30 min',  status: 'Done',        notes: 'Live feed + recurring 9am event ✅ Day 3' },
   { id: '15', title: 'Gmail widget on dashboard',        priority: 'Medium', category: 'Dev',       est: '30 min',  status: 'Todo' },
   { id: '16', title: 'CAD-to-manufacture workflow plan', priority: 'High',   category: 'Ops',       est: '1 hr',    status: 'Todo' },
   { id: '17', title: 'Brand photography shot list',      priority: 'Medium', category: 'Marketing', est: '30 min',  status: 'Todo' },

@@ -1,0 +1,8 @@
+{
+  "default": "openrouter/auto",
+  "haiku": {
+    "provider": "openrouter/anthropic",
+    "model": "haiku-4.6",
+    "enabled": true
+  }
+}
